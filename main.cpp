@@ -1,32 +1,28 @@
 #include <iostream>
 #include <cmath>
 
-using std::endl;
-using std::cin;
-using std::cout;
-
 int main()
 {
-	cout << "THE FIRST EXAMPLE MATH DISPLAY!\n";
-	cout << "Hi, please enter two whole numbers: ";
+	std::cout << "THE FIRST EXAMPLE MATH DISPLAY!\n";
+	std::cout << "Hi, please enter two whole numbers: ";
 
 	int x,y;
 
-	cin >> x >> y;
-	cout << "Addition: " << x + y << endl;
-	cout << "Subtraction: " << x - y << endl;
-	cout << "Multiplication: " << x * y << endl;
+	std::cin >> x >> y;
+	std::cout << "Addition: " << x + y << endl;
+	std::cout << "Subtraction: " << x - y << endl;
+	std::cout << "Multiplication: " << x * y << endl;
 	if(y != 0)
 	{
-		cout << "Division: " << x / y << endl;
-		cout << "Remainder: " << x % y << endl;
+		std::cout << "Division: " << x / y << endl;
+		std::cout << "Remainder: " << x % y << endl;
 	}
 	else
 	{
-		cout << "Dividing by zero is not a number." << endl;
+		std::cout << "Dividing by zero is not a number." << endl;
 	}
-	cout << "Square Root: " << sqrt(x) << endl;
-	cout << "Square: " << pow(x, y) << endl;
+	std::cout << "Square Root: " << sqrt(x) << endl;
+	std::cout << "Square: " << pow(x, y) << endl;
 
 	return 0;
 }
